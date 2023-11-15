@@ -6,25 +6,22 @@
     android:id="@+id/constraint"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <EditText
+    <com.vicmikhailau.maskededittext.MaskedEditText
         android:id="@+id/edt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:autoLink="phone"
-        android:autofillHints="phone"
-        android:background="@drawable/shape_edt"
-        android:enabled="true"
-        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent"
         android:paddingVertical="15dp"
-        android:keyboardNavigationCluster="true"
-        android:paddingStart="15dp"
-        android:textColorHint="#101828"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:mask="+998(##) ### ## ##"
+
+        android:text="+9989"
+        android:paddingStart="10dp"
+        android:background="@drawable/shape_edt"
+        android:inputType="phone"
+        android:layout_margin="12dp"
+        android:keyboardNavigationCluster="true"
+        />
 
     <Button
         android:id="@+id/buttonn"

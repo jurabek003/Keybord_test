@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val edt=findViewById<EditText>(R.id.edt)
         val button =findViewById<Button>(R.id.buttonn)
 
         test1()
